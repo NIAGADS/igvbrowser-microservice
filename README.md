@@ -1,39 +1,7 @@
-# NIAGADS-IGV 
+# NIAGADS IGVBrowser Microservice
 
-## IGV Config Options: 
+Custom IGV.js genome browser and track selector for data tracks hosted in the NIAGADS Alzheimer's GenomicsDB (GWAS Summary Statistics, xQTL Gene Summaries) or Functional Genomics Repository (FILER).
 
-* `infoURL` -> link for features; track specific
+> CODE HAS BEEN MIGRATED to the `niagads-viz-monorepo`.   This repository is no longer under active development and will be kept for issue-tracking only.
 
-```
-showAllChromosomes: false
-​
-showCenterGuide: false
-​
-showCenterGuideButton: true
-​
-showChromosomeWidget: false --> hides chromosome select
-​
-showCircularView: false
-​
-showCircularViewButton: false
-​
-showControls: true
-​
-showCursorGuide: false
-​
-showCursorTrackingGuideButton: true
-​
-showIdeogram: true
-​
-showNavigation: true
-​
-showRuler: true
-​
-showSVGButton: true
-​
-showSampleNames: false
-​
-showTrackLabelButton: true
-​
-showTrackLabels: true
-```
+README will be updated when migration is complete.
