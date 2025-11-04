@@ -11,6 +11,7 @@ export default interface IGVBrowserTrack {
     removable?: boolean;
     reader?: any;
     decode?: any;
+    autoscale?: boolean;
 
     infoURL?: string;
 
@@ -22,8 +23,7 @@ export default interface IGVBrowserTrack {
     minHeight?: number;
     maxHeight?: number;
     order?: number;
-    color?: string; //if a function, don't export 
+    color?: string; //if a function, don't export
 
-    queryable?: boolean
+    queryable?: boolean;
 }
-

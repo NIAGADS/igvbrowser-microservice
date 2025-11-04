@@ -1,4 +1,5 @@
 const { default: igv } = await import("igv/dist/igv.esm");
+
 import { _deepCopy } from "@niagads/common";
 
 const SEQUENCES = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22];
@@ -39,10 +40,10 @@ function getReader(config: any, genome: any, chr: string) {
     if (config.decode) {
         shardConfig.decode = config.decode; // deep copy loses functions as it is a json transformation
     }
-    shardConfig.url = config.url.replace("$CHR", chr);
+    shardConfig.url = config.url.replace("$CHR", chr).replace("chr", "");
 
     if (config.indexURL) {
-        shardConfig.indexURL = config.indexURL.replace("$CHR", chr);
+        shardConfig.indexURL = config.indexURL.replace("$CHR", chr).replace("chr", "");
     }
 
     return new igv.FeatureFileReader(shardConfig, genome);
